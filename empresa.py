@@ -23,4 +23,9 @@ class Empresa:
         self._direccion = direccion
 
     def mostrar_informacion(self):
-        return f"Empresa: {self._nombre_empresa}, Dirección: {self._direccion}"
+        if self._nombre_empresa is None:
+            print("Valores Incorrectos")
+        else:
+            return f"Empresa: {self._nombre_empresa}, Dirección: {self._direccion}"
+
+
